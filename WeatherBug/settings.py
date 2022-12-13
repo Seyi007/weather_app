@@ -28,7 +28,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['weatherapp-production-958a.up.railway.app', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://weatherapp-production-958a.up.railway.app']
 
 
 # Application definition
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Dhaka'
+TIME_ZONE = 'Africa/Lagos'
 
 USE_I18N = True
 
